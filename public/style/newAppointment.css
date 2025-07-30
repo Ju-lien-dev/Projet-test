@@ -1,0 +1,30 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+}
+
+.bg-full {
+    background-image: url('https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/form-banners/banner2/banner-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.cardbox {
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.cardbox .media-body p {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.cardbox .btn {
+    margin-top: 20px;
+}

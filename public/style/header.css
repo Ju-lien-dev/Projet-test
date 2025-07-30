@@ -1,0 +1,102 @@
+#title {
+    color: #fff;
+}
+
+.header-blue {
+    background: linear-gradient(135deg, #172a74, #21a8af);
+    background-color: #184d8e;
+    font-family: 'Source Sans Pro', sans-serif;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Navbar styles */
+.header-blue .navbar {
+    background: transparent;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    color: #fff;
+    /* texte blanc */
+    border-radius: 0;
+    box-shadow: none;
+    border: none;
+}
+
+@media (min-width: 768px) {
+    .header-blue .navbar {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+}
+
+.header-blue .navbar .navbar-brand {
+    font-weight: bold;
+    color: #fff;
+    /* texte blanc */
+}
+
+.header-blue .navbar .navbar-brand:hover {
+    color: #f0f0f0;
+}
+
+.header-blue .navbar .navbar-collapse {
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    margin-top: 0.5rem;
+}
+
+@media (min-width: 768px) {
+    .header-blue .navbar .navbar-collapse {
+        border-color: transparent;
+        margin: 0;
+    }
+}
+
+.header-blue .navbar .navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.header-blue .navbar .navbar-toggler:hover,
+.header-blue .navbar-toggler:focus {
+    background: none;
+}
+
+/* nav-link en blanc */
+.header-blue .navbar-nav .nav-link {
+    color: #fff !important;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.header-blue .navbar-nav .nav-link:hover,
+.header-blue .navbar-nav .nav-link:focus {
+    color: #f0f0f0;
+}
+
+/* dropdown menu background reste blanc */
+/* dropdown items en blanc */
+.header-blue .navbar-nav>.nav-item>.dropdown-menu {
+    margin-top: -5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #184d8e;
+    /* Optionnel : changer fond menu dropdown pour garder cohérence */
+    border-radius: 2px;
+}
+
+/* dropdown items en blanc */
+.header-blue .navbar-nav .dropdown-menu .dropdown-item {
+    line-height: 2;
+    color: #fff;
+    /* texte blanc */
+}
+
+/* hover dropdown item */
+.header-blue .navbar-nav .dropdown-menu .dropdown-item:hover,
+.header-blue .navbar-nav .dropdown-menu .dropdown-item:focus {
+    background: #21a8af;
+    color: #fff;
+}

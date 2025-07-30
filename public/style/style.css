@@ -1,0 +1,84 @@
+    body {
+        background: #f4f6f9;
+        font-family: 'Rokkitt', serif;
+    }
+
+    .sidebar {
+        background: #ffffff;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        height: 100%;
+        position: sticky;
+        top: 20px;
+    }
+
+    .appointments {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .appointment-card {
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        padding: 20px;
+        flex: 1 1 calc(50% - 20px);
+        min-width: 300px;
+        transition: all 0.3s ease;
+    }
+
+    .appointment-card:hover {
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+        transform: translateY(-3px);
+    }
+
+    .appointment-card h5 {
+        margin-bottom: 15px;
+        font-weight: bold;
+        color: #333;
+    }
+
+    .appointment-info {
+        font-size: 1.1em;
+        margin-bottom: 10px;
+    }
+
+    .appointment-info i {
+        color: #007bff;
+        margin-right: 8px;
+    }
+
+    .btn-group {
+        margin-top: 15px;
+    }
+
+    .modal-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.6);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+    }
+
+    .modal-content {
+        background: #fff;
+        padding: 30px;
+        border-radius: 12px;
+        width: 90%;
+        max-width: 400px;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        font-family: 'Rokkitt', serif;
+    }
+
+    .modal-content h5 {
+        font-weight: bold;
+        margin-bottom: 15px;
+    }

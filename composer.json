@@ -1,0 +1,9 @@
+{
+  "description": "Un projet PHP minimal",
+  "type": "project",
+  "autoload": {
+    "psr-4": {
+      "App\\": "app/"
+    }
+  }
+}
