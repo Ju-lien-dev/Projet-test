@@ -134,4 +134,19 @@ class User
         $stmt->execute([$date]);
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
+
+    public function getAllPatients($search = null)
+    {
+        if ($search) {
+            $query = "SELECT * FROM users WHERE is_admin = '0' 
+                  AND (nom LIKE :search OR prenom LIKE :search OR tel LIKE :search OR email LIKE :search)";
+            $stmt = $this->pdo->prepare($query);
+            $stmt->execute(['search' => "%$search%"]);
+        } else {
+            $stmt = $this->pdo->prepare("SELECT * FROM users WHERE is_admin = '0'");
+            $stmt->execute();
+        }
+
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    }
 }

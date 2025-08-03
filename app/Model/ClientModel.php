@@ -18,4 +18,16 @@ class ClientModel
         $stmt->execute(['id' => $id]);
         return $stmt->fetch(PDO::FETCH_ASSOC);
     }
+
+    public function updateClient($id, $nom, $prenom, $email, $tel)
+    {
+        $stmt = $this->pdo->prepare('UPDATE users SET nom = :nom, prenom = :prenom, email = :email, tel = :tel WHERE id = :id');
+        return $stmt->execute([
+            'id' => $id,
+            'nom' => $nom,
+            'prenom' => $prenom,
+            'email' => $email,
+            'tel' => $tel
+        ]);
+    }
 }

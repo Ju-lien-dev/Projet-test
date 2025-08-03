@@ -39,6 +39,26 @@ class ClientController
             exit;
         }
     }
+
+    public function modifierMesInfos()
+    {
+        self::requireClient();
+
+        $userId = $_SESSION['user']['id'];
+
+        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+            $nom = $_POST['nom'];
+            $prenom = $_POST['prenom'];
+            $email = $_POST['email'];
+            $tel = $_POST['tel'];
+            $this->client->updateClient($userId, $nom, $prenom, $email, $tel);
+            header('Location: /mon-compte');
+        } else {
+
+            $infos = $this->client->getInfoClient($userId);
+            include_once __DIR__ . '/../View/clientConnected/mesInfos.php';
+        }
+    }
     public function confirmRdv()
     {
         include_once __DIR__ . '/../View/clientConnected/confirmRdv.php';

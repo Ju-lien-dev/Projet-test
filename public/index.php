@@ -1,4 +1,5 @@
 <?php
+
 require_once __DIR__ . '/../vendor/autoload.php';
 require_once __DIR__ . '/../app/config/database.php';
 
@@ -7,11 +8,16 @@ use App\Controller\AdminController;
 use App\Controller\AppointmentController;
 use App\Controller\AuthController;
 
-$uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
-$uriSegments = explode('/', trim($uri, '/'));
+$scriptName = explode('/', trim($_SERVER['SCRIPT_NAME'], '/'));
+$requestUri = explode('/', trim(parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH), '/'));
 
+while (!empty($scriptName) && !empty($requestUri) && $scriptName[0] === $requestUri[0]) {
+   array_shift($scriptName);
+   array_shift($requestUri);
+}
 
-// var_dump($uriSegments);
+$uriSegments = $requestUri;
+
 
 
 $controller = new HomeController();
@@ -87,6 +93,17 @@ switch ($uriSegments[0]) {
       $controller->enregistrement();
       break;
 
+   case 'mentions-legales':
+      $controller->mentionsLegales();
+      break;
+
+   case 'cgu':
+      $controller->cgu();
+      break;
+
+   case 'politique-confidentialite':
+      $controller->politiqueConfidentialite();
+      break;
 
    case 'merci':
       $token = $uriSegments[1] ?? null;
@@ -123,6 +140,10 @@ switch ($uriSegments[0]) {
                $clientController->prendreRdv();
                break;
 
+            case 'mes-infos':
+               $clientController->modifierMesInfos();
+               break;
+
             default:
                $clientController->monCompte(); // fallback
                break;
@@ -151,7 +172,7 @@ switch ($uriSegments[0]) {
                $adminController->services();
                break;
             case 'patients':
-               $adminController->patients();
+               $adminController->seePatients();
                break;
             case 'horaires':
                $adminController->horaires();

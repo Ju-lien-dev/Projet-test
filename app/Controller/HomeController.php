@@ -23,6 +23,7 @@ class HomeController
 
 
 
+
     public function services()
     {
         include_once __DIR__ . '/../View/services.php';
@@ -47,5 +48,20 @@ class HomeController
     public function enregistrement()
     {
         include_once __DIR__ . '/../View/newMemberForm.php';
+    }
+
+    public function mentionsLegales()
+    {
+        include_once __DIR__ . '/../View/mentions-legales.php';
+    }
+
+    public function cgu()
+    {
+        include_once __DIR__ . '/../View/cgu.php';
+    }
+
+    public function politiqueConfidentialite()
+    {
+        include_once __DIR__ . '/../View/politique-confidentialite.php';
     }
 }

@@ -31,9 +31,9 @@
                         <div class="col-md-4 mb-4">
                                 <h5>Informations légales</h5>
                                 <ul class="list-unstyled quick-links">
-                                        <li><a href="#"><i class="fa fa-angle-double-right"></i> Mentions légales</a></li>
-                                        <li><a href="#"><i class="fa fa-angle-double-right"></i> CGU</a></li>
-                                        <li><a href="#"><i class="fa fa-angle-double-right"></i> Politique de confidentialité</a></li>
+                                        <li><a href="/mentions-legales"><i class="fa fa-angle-double-right"></i> Mentions légales</a></li>
+                                        <li><a href="/cgu"><i class="fa fa-angle-double-right"></i> CGU</a></li>
+                                        <li><a href="/politique-confidentialite"><i class="fa fa-angle-double-right"></i> Politique de confidentialité</a></li>
                                 </ul>
                                 <ul class="list-inline social text-center mt-3">
                                         <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>

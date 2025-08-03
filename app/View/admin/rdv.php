@@ -63,9 +63,7 @@
 
 
                         <div class="btn-group">
-                            <a href="modif-rdv/<?= htmlspecialchars($appointment['token']); ?>" class="btn btn-outline-primary">
-                                <i class="fa fa-pencil"></i> Modifier
-                            </a>
+
                             <button type="button" class="btn btn-outline-danger delete-btn" data-id="<?= htmlspecialchars($appointment['token']); ?>">
                                 <i class="fa fa-trash"></i> Supprimer
                             </button>
@@ -86,7 +84,7 @@
         <div class="modal-content">
             <h5>Confirmer la suppression</h5>
             <p>Êtes-vous sûr de vouloir supprimer ce rendez-vous ? Cette action est irréversible.</p>
-            <div class="btn-group mt-3">
+            <div class="center-buttons">
                 <a id="confirmDelete" class="btn btn-danger">Oui, Supprimer</a>
                 <button id="cancelDelete" class="btn btn-secondary">Annuler</button>
             </div>

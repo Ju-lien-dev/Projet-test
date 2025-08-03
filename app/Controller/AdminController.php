@@ -4,18 +4,21 @@ namespace App\Controller;
 
 use App\Model\Article;
 use App\Model\Appointment;
+use App\Model\Customer;
 use PDO;
 
 class AdminController
 {
     private $article;
     private $appointment;
+    private $customer;
 
     public function __construct()
     {
         global $pdo;
         $this->article = new Article($pdo);
         $this->appointment = new Appointment($pdo);
+        $this->customer = new Customer($pdo);
     }
 
 
@@ -42,11 +45,6 @@ class AdminController
         self::requireAdmin();
         $articles = $this->article->getAll();
         include_once __DIR__ . '/../View/admin/actualites.php';
-    }
-    public function patients()
-    {
-        self::requireAdmin();
-        include_once __DIR__ . '/../View/admin/patients.php';
     }
     public function horaires()
     {
@@ -133,5 +131,14 @@ class AdminController
         $this->appointment->delete($token);
         header('Location: /admin/rdv');
         exit;
+    }
+
+    public function seePatients()
+    {
+        $userModel = new \App\Model\User($GLOBALS['pdo']);
+        $search = $_GET['search'] ?? null;
+        $patients = $userModel->getAllPatients($search);
+
+        include_once __DIR__ . '/../View/admin/patients.php';
     }
 }

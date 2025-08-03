@@ -22,7 +22,7 @@ if (session_status() === PHP_SESSION_NONE) {
 <body>
     <nav class="navbar navbar-expand-lg navbar-light header-blue shadow-sm">
         <div class="container">
-            <a class="navbar-brand d-flex align-items-center" href="/accueil">
+            <a class="navbar-brand d-flex align-items-center" href="/admin/rdv">
                 <img src="/assets/logo-dentiste.png" alt="Logo" style="height: 40px; margin-right: 8px;" />
                 <strong id="title">Dr Dupont</strong>
             </a>
@@ -43,10 +43,8 @@ if (session_status() === PHP_SESSION_NONE) {
                         </a>
                         <div class="dropdown-menu" aria-labelledby="servicesDropdown">
                             <a class="dropdown-item" href="rdv">rendez-vous</a>
-                            <a class="dropdown-item" href="services">services</a>
                             <a class="dropdown-item" href="actualites">Actualités</a>
                             <a class="dropdown-item" href="patients">patients</a>
-                            <a class="dropdown-item" href="horaires">Horaires d'ouverture</a>
 
                         </div>
                     </li>

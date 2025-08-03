@@ -38,7 +38,7 @@
                         </a>
                         <div class="dropdown-menu" aria-labelledby="servicesDropdown">
                             <a class="dropdown-item" href="/mon-compte/mes-rdvs">Mes rendez vous</a>
-                            <a class="dropdown-item" href="/mon-compte/infos">Mon compte</a>
+                            <a class="dropdown-item" href="/mon-compte/mes-infos">Mon compte</a>
                         </div>
                     </li>
 

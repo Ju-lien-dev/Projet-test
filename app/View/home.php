@@ -19,7 +19,7 @@
 
     <main>
         <section class="imgDr" aria-label="Présentation du docteur Dupont">
-            <img src="assets/dentiste.jpg" alt="Docteur Dupont souriant dans son cabinet" />
+            <img src="assets/dentiste2.jpg" alt="Docteur Dupont souriant dans son cabinet" />
             <h2>La santé dentaire avant tout !</h2>
         </section>
 

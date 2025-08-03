@@ -69,16 +69,12 @@
                         </div>
                     </div>
 
-                    <div class="form-check mb-3">
-                        <input type="checkbox" class="form-check-input" name="remember" id="remember" <?= !empty($old['remember']) ? 'checked' : '' ?>>
-                        <label class="form-check-label" for="remember">Rester connecté</label>
-                    </div>
+
 
                     <button type="submit" class="btn btn-primary btn-block">Se connecter</button>
 
                     <div class="mt-3 text-center">
-                        <a href="#" onclick="showSignup()">Créer un compte</a> |
-                        <a href="#">Mot de passe oublié ?</a>
+                        <a href="#" onclick="showSignup()">Créer un compte</a>
                     </div>
                 </form>
 
