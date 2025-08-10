@@ -35,7 +35,7 @@ class ClientController
         }
 
         if (!isset($_SESSION['user']) || $_SESSION['user']['is_admin']) {
-            header('Location: /login');
+            header('Location: /accueil/login');
             exit;
         }
     }
@@ -52,7 +52,7 @@ class ClientController
             $email = $_POST['email'];
             $tel = $_POST['tel'];
             $this->client->updateClient($userId, $nom, $prenom, $email, $tel);
-            header('Location: /mon-compte');
+            header('Location: /accueil/mon-compte');
         } else {
 
             $infos = $this->client->getInfoClient($userId);

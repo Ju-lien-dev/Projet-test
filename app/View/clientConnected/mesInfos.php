@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Mon compte</title>
-    <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="/accueil/style/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         .form-section {
@@ -35,7 +35,7 @@
                     <h4 class="text-center text-primary">Mes informations personnelles</h4>
 
                     <?php if ($infos): ?>
-                        <form method="post" action="/mon-compte/mes-infos">
+                        <form method="post" action="/accueil/mon-compte/mes-infos">
                             <div class="form-group">
                                 <label for="nom">Nom :</label>
                                 <input type="text" class="form-control" id="nom" name="nom" value="<?= htmlspecialchars($infos['nom']) ?>" required>

@@ -6,7 +6,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Confirmation du rendez-vous</title>
-    <link rel="stylesheet" href="/style/newAppointClient.css">
+    <link rel="stylesheet" href="/accueil/style/newAppointClient.css">
     <style>
         .rdv-box {
             max-width: 500px;
@@ -30,7 +30,7 @@
         <p><strong>Date :</strong> <span id="rdv-date">...</span></p>
         <p><strong>Heure :</strong> <span id="rdv-time">...</span></p>
 
-        <form method="post" action="/mon-compte/valider-rdv" id="confirmForm">
+        <form method="post" action="/accueil/mon-compte/valider-rdv" id="confirmForm">
             <input type="hidden" name="date" id="form-date">
             <input type="hidden" name="time" id="form-time">
             <button type="submit" class="btn btn-primary mt-4">Valider le créneau</button>
@@ -52,7 +52,7 @@
             } else {
                 document.querySelector('.rdv-box').innerHTML = `
                     <h2>Aucun rendez-vous sélectionné</h2>
-                    <a href="/nouveau-rdv" class="btn btn-primary mt-4">Prendre un rendez-vous</a>
+                    <a href="/accueil/nouveau-rdv" class="btn btn-primary mt-4">Prendre un rendez-vous</a>
                 `;
             }
         });

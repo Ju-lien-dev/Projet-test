@@ -36,7 +36,7 @@ class AppointmentController
             $time = $_POST['time'];
 
             $this->appointment->createDispo($date, $time);
-            header('Location: /admin/disponibilitees');
+            header('Location: /accueil/admin/disponibilitees');
         } else {
             include_once __DIR__ . '/../View/admin/newDispo.php';
         }
@@ -56,11 +56,11 @@ class AppointmentController
 
                 try {
                     $token = $this->users->createAppointmentForConnectedUser($userId, $date, $time);
-                    header('Location: /mon-compte/merci/' . $token);
+                    header('Location: /accueil/mon-compte/merci/' . $token);
                     exit;
                 } catch (\Exception $e) {
                     // Gérer erreur (créneau déjà pris, etc.)
-                    header('Location: /nouveau-rdv?error=1');
+                    header('Location: /accueil/nouveau-rdv?error=1');
                     exit;
                 }
             } else {
@@ -73,10 +73,10 @@ class AppointmentController
                     $token = $this->users->createNoAccountUser($nom, $prenom, $tel, $date, $time);
                     $this->users->deleteDispo($date, $time);
 
-                    header('Location: /merci/' . $token);
+                    header('Location: /accueil/merci/' . $token);
                     exit;
                 } else {
-                    header('Location: /nouveau-rdv');
+                    header('Location: /accueil/nouveau-rdv');
                     exit;
                 }
             }
@@ -97,7 +97,7 @@ class AppointmentController
             if ($nom && $prenom && $tel && $date && $time) {
                 $this->users->createNoAccountUser($nom, $prenom, $tel, $date, $time);
             } else {
-                header('Location: /nouveau-rdv');
+                header('Location: /accueil/nouveau-rdv');
                 exit;
             }
 

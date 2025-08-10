@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -8,7 +9,7 @@
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" href="/accueil/style/index.css">
 
 
 </head>
@@ -19,7 +20,7 @@
 
     <main>
         <section class="imgDr" aria-label="Présentation du docteur Dupont">
-            <img src="assets/dentiste2.jpg" alt="Docteur Dupont souriant dans son cabinet" />
+            <img src="/accueil/assets/dentiste2.jpg" alt="Docteur Dupont souriant dans son cabinet" />
             <h2>La santé dentaire avant tout !</h2>
         </section>
 
@@ -29,7 +30,7 @@
                 <p>Parce que votre sourire mérite le meilleur, notre équipe est à vos côtés à chaque étape.</p>
             </div>
             <div class="img">
-                <img src="assets/dentist.jpg" alt="Assistante dentaire souriante" />
+                <img src="/accueil/assets/dentist.jpg" alt="Assistante dentaire souriante" />
             </div>
         </section>
     </main>

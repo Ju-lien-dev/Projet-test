@@ -7,7 +7,7 @@ if (isset($_SESSION['user']) && $_SESSION['user']['is_admin'] == 0) {
 }
 ?>
 
-<link rel="stylesheet" href="/style/newAppointClient.css">
+<link rel="stylesheet" href="/accueil/style/newAppointClient.css">
 <link href="https://fonts.googleapis.com/css?family=Rokkitt" rel="stylesheet">
 <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
@@ -53,7 +53,7 @@ $months = [
                 $formattedTime = date('H:i', strtotime($appointment['time']));
                 ?>
                 <div class="col-md-6 col-lg-4">
-                    <form method="post" action="/reserver" class="appointment-form">
+                    <form method="post" action="/accueil/reserver" class="appointment-form">
                         <div class="cardbox shadow-lg bg-white">
                             <div class="card-body text-center">
                                 <h5 class="card-title mb-2"><?php echo $formattedDate; ?></h5>
@@ -134,7 +134,7 @@ $months = [
 
             if (isLoggedIn) {
                 // Redirection directe vers la confirmation pour utilisateur connecté
-                window.location.href = "/mon-compte/confirmer-rdv";
+                window.location.href = "/accueil/mon-compte/confirmer-rdv";
             } else {
                 // Utilisateur non connecté : afficher modale
                 window.formToSubmit = form;
@@ -197,6 +197,6 @@ $months = [
 
 
 
-        window.location.href = "/login";
+        window.location.href = "/accueil/login";
     });
 </script>

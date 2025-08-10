@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="style/footer.css">
+<link rel="stylesheet" href="/accueil/style/footer.css">
 
 
 <section id="footer">
@@ -19,10 +19,10 @@
                         <div class="col-md-4 mb-4">
                                 <h5>Liens utiles</h5>
                                 <ul class="list-unstyled quick-links">
-                                        <li><a href="/accueil"><i class="fa fa-angle-double-right"></i> Accueil</a></li>
-                                        <li><a href="/services"><i class="fa fa-angle-double-right"></i> Nos services</a></li>
-                                        <li><a href="/a_propos"><i class="fa fa-angle-double-right"></i> À propos</a></li>
-                                        <li><a href="/nouveau-rdv"><i class="fa fa-angle-double-right"></i> Prendre rendez-vous</a></li>
+                                        <li><a href="/accueil/accueil"><i class="fa fa-angle-double-right"></i> Accueil</a></li>
+                                        <li><a href="/accueil/services"><i class="fa fa-angle-double-right"></i> Nos services</a></li>
+                                        <li><a href="/accueil/a_propos"><i class="fa fa-angle-double-right"></i> À propos</a></li>
+                                        <li><a href="/accueil/nouveau-rdv"><i class="fa fa-angle-double-right"></i> Prendre rendez-vous</a></li>
 
                                 </ul>
                         </div>
@@ -31,9 +31,9 @@
                         <div class="col-md-4 mb-4">
                                 <h5>Informations légales</h5>
                                 <ul class="list-unstyled quick-links">
-                                        <li><a href="/mentions-legales"><i class="fa fa-angle-double-right"></i> Mentions légales</a></li>
-                                        <li><a href="/cgu"><i class="fa fa-angle-double-right"></i> CGU</a></li>
-                                        <li><a href="/politique-confidentialite"><i class="fa fa-angle-double-right"></i> Politique de confidentialité</a></li>
+                                        <li><a href="/accueil/mentions-legales"><i class="fa fa-angle-double-right"></i> Mentions légales</a></li>
+                                        <li><a href="/accueil/cgu"><i class="fa fa-angle-double-right"></i> CGU</a></li>
+                                        <li><a href="/accueil/politique-confidentialite"><i class="fa fa-angle-double-right"></i> Politique de confidentialité</a></li>
                                 </ul>
                                 <ul class="list-inline social text-center mt-3">
                                         <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>

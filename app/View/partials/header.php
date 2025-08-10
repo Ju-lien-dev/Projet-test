@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Cabinet du Docteur Dupont</title>
 
-    <link rel="stylesheet" href="/style/header.css" />
+    <link rel="stylesheet" href="/accueil/style/header.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap" rel="stylesheet" />
@@ -16,7 +16,7 @@
     <nav class="navbar navbar-expand-lg navbar-light header-blue shadow-sm">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center" href="/accueil">
-                <img src="/assets/logo-dentiste.png" alt="Logo" style="height: 40px; margin-right: 8px;" />
+                <img src="/accueil/assets/logo-dentiste.png" alt="Logo" style="height: 40px; margin-right: 8px;" />
                 <strong id="title">Dr Dupont</strong>
             </a>
 
@@ -28,7 +28,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="/nouveau-rdv">Prendre RDV</a>
+                        <a class="nav-link" href="/accueil/nouveau-rdv">Prendre RDV</a>
                     </li>
 
                     <li class="nav-item dropdown">
@@ -37,19 +37,19 @@
                             Services
                         </a>
                         <div class="dropdown-menu" aria-labelledby="servicesDropdown">
-                            <a class="dropdown-item" href="/services">Présentation des services</a>
-                            <a class="dropdown-item" href="/actualites">Actualités</a>
-                            <a class="dropdown-item" href="/a_propos">À propos</a>
+                            <a class="dropdown-item" href="/accueil/services">Présentation des services</a>
+                            <a class="dropdown-item" href="/accueil/actualites">Actualités</a>
+                            <a class="dropdown-item" href="/accueil/a_propos">À propos</a>
                         </div>
                     </li>
 
                     <?php if (isset($_SESSION['user'])): ?>
                         <li class="nav-item">
-                            <a class="nav-link" href="/logout"><i class="fas fa-sign-out-alt"></i> Déconnexion</a>
+                            <a class="nav-link" href="./logout"><i class="fas fa-sign-out-alt"></i> Déconnexion</a>
                         </li>
                     <?php else: ?>
                         <li class="nav-item">
-                            <a class="nav-link" href="/connection"><i class="fas fa-user"></i> Se connecter</a>
+                            <a class="nav-link" href="./connection"><i class="fas fa-user"></i> Se connecter</a>
                         </li>
                     <?php endif; ?>
                 </ul>

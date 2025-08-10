@@ -24,7 +24,7 @@
                 <div class="appointment-card">
                     <!-- Image -->
                     <div class="mb-3 text-center">
-                        <img src="<?= !empty($article['image']) ? "/uploads/" . htmlspecialchars($article['image']) : "/assets/dentist.jpg" ?>"
+                        <img src="<?= !empty($article['image']) ? "/accueil/uploads/" . htmlspecialchars($article['image']) : "/accueil/assets/dentist.jpg" ?>"
                             alt="<?= htmlspecialchars($article['title']) ?>"
                             class="img-fluid rounded"
                             style="max-height: 200px; object-fit: cover; width: 100%;">
@@ -58,4 +58,4 @@
 </div>
 
 
-<script src="/js/actualites.js"></script>
+<script src="/accueil/js/actualites.js"></script>

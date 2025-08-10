@@ -8,9 +8,9 @@
         document.addEventListener('DOMContentLoaded', function() {
             const pendingRdv = localStorage.getItem('pendingRdv');
             if (pendingRdv) {
-                window.location.href = "/mon-compte/confirmer-rdv";
+                window.location.href = "/accueil/mon-compte/confirmer-rdv";
             } else {
-                window.location.href = "/mon-compte";
+                window.location.href = "/accueil/mon-compte";
             }
         });
     </script>

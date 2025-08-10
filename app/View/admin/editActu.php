@@ -1,47 +1,14 @@
 <?php include_once __DIR__ . '/partialsAdmin/header.php'; ?>
 <?php include_once __DIR__ . '/partialsAdmin/navBarActu.php'; ?>
 
-<link rel="stylesheet" href="../../style/header.css">
-<link rel="stylesheet" href="../style/style.css">
+<link rel="stylesheet" href="/accueil/style/header.css">
+<link rel="stylesheet" href="/accueil/style/style.css">
 
 <script src="https://cdn.tiny.cloud/1/m9bc9wcsl99glc0dz88tjkdxs6mgqi7ki9zvelirtm96qehu/tinymce/7/tinymce.min.js" referrerpolicy="origin"></script>
 
-<!-- <script>
-    tinymce.init({
-        selector: 'textarea',
-
-        plugins: [
-            'anchor', 'autolink', 'charmap', 'codesample', 'emoticons', 'image', 'link', 'lists', 'media', 'searchreplace', 'table', 'visualblocks', 'wordcount',
-            'checklist', 'mediaembed', 'casechange', 'formatpainter', 'pageembed', 'a11ychecker', 'tinymcespellchecker', 'permanentpen', 'powerpaste', 'advtable', 'advcode', 'editimage', 'advtemplate', 'ai', 'mentions', 'tinycomments', 'tableofcontents', 'footnotes', 'mergetags', 'autocorrect', 'typography', 'inlinecss', 'markdown', 'importword', 'exportword', 'exportpdf'
-        ],
-
-        toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table mergetags | addcomment showcomments | spellcheckdialog a11ycheck typography | align lineheight | checklist numlist bullist indent outdent | emoticons charmap | removeformat',
-
-        tinycomments_mode: 'embedded',
-        tinycomments_author: 'Author name',
-        mergetags_list: [{
-                value: 'First.Name',
-                title: 'First Name'
-            },
-            {
-                value: 'Email',
-                title: 'Email'
-            },
-        ],
-
-        ai_request: (request, respondWith) => respondWith.string(() => Promise.reject('See docs to implement AI Assistant')),
-
-        setup: function(editor) {
-            // À chaque modification, on sauvegarde dans le textarea HTML
-            editor.on('change', function() {
-                editor.save();
-            });
-        }
-    });
-</script> -->
 
 <h1>Modifier l'actualité</h1>
-<form action="/admin/edit-actu/<?php echo $article['id']; ?>" method="post">
+<form action="/accueil/admin/edit-actu/<?php echo $article['id']; ?>" method="post">
     <div class="container my-5">
         <div class=" mb-3">
             <label for="exampleFormControlInput1" class="form-label">Titre</label>

@@ -23,7 +23,7 @@
                     value="<?= htmlspecialchars($_GET['search'] ?? '') ?>">
                 <div class="input-group-append">
                     <button class="btn btn-primary" type="submit">Rechercher</button>
-                    <a href="/admin/patients" class="btn btn-secondary">Réinitialiser</a>
+                    <a href="/accueil/admin/patients" class="btn btn-secondary">Réinitialiser</a>
                 </div>
             </div>
         </form>

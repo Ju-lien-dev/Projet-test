@@ -1,7 +1,7 @@
 <?php include_once __DIR__ . '/partialsAdmin/header.php'; ?>
 <?php include_once __DIR__ . '/partialsAdmin/navBarRdv.php'; ?>
-<link rel="stylesheet" href="../style/header.css">
-<link rel="stylesheet" href="../style/style.css">
+<link rel="stylesheet" href="/accueil/style/header.css">
+<link rel="stylesheet" href="/accueil/style/style.css">
 <link href="https://fonts.googleapis.com/css?family=Rokkitt&display=swap" rel="stylesheet">
 <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
@@ -21,7 +21,7 @@
                         <input type="date" name="date" id="date" value="<?= htmlspecialchars($_GET['date'] ?? '') ?>" class="form-control">
                     </div>
                     <button type="submit" class="btn btn-primary btn-block">Filtrer</button>
-                    <a href="/admin/rdv" class="btn btn-secondary btn-block mt-2">Réinitialiser</a>
+                    <a href="/accueil/admin/rdv" class="btn btn-secondary btn-block mt-2">Réinitialiser</a>
                 </form>
             </div>
         </div>
@@ -85,11 +85,11 @@
             <h5>Confirmer la suppression</h5>
             <p>Êtes-vous sûr de vouloir supprimer ce rendez-vous ? Cette action est irréversible.</p>
             <div class="center-buttons">
-                <a id="confirmDelete" class="btn btn-danger">Oui, Supprimer</a>
+                <button id="confirmDelete" class="btn btn-danger">Oui, Supprimer</button>
                 <button id="cancelDelete" class="btn btn-secondary">Annuler</button>
             </div>
         </div>
     </div>
 </div>
 
-<script src="/js/rdv.js"></script>
+<script src="/accueil/js/rdv.js"></script>

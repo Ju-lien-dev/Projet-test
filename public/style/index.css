@@ -11,8 +11,6 @@ body {
     line-height: 1.6;
 }
 
-/* Header and footer from your partials should stay as is */
-
 /* Container for main content */
 .imgDr {
     position: relative;
@@ -90,5 +88,42 @@ body {
 
     .imgDr h2 {
         font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .imgDr h2 {
+        font-size: 1.3rem;
+        padding: 0 10px;
+    }
+
+    .introduction {
+        flex-direction: column;
+        margin-bottom: 30px;
+        padding: 0 10px;
+    }
+
+    .presentation,
+    .introduction .img {
+        flex: 1 1 100%;
+        padding: 10px 0;
+    }
+
+    .presentation h2 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+    .presentation p {
+        font-size: 1rem;
+    }
+
+    .introduction .img img {
+        max-width: 100%;
+        height: auto;
+        /* assure une bonne hauteur proportionnelle */
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+        /* un peu plus léger */
     }
 }

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>À propos - Cabinet du Dr. Dupont</title>
-    <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="/accueil/style/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
@@ -17,7 +17,7 @@
 
         <div class="row mb-5">
             <div class="col-md-4 text-center">
-                <img src="/assets/dentiste.png" alt="Dr. Dupont" class="img-fluid rounded-circle shadow" style="max-width: 250px;">
+                <img src="/accueil/assets/dentiste.png" alt="Dr. Dupont" class="img-fluid rounded-circle shadow" style="max-width: 250px;">
             </div>
             <div class="col-md-8">
                 <h3>Dr. Claire Dupont</h3>
@@ -37,19 +37,19 @@
         <div class="row text-center">
 
             <div class="col-md-4 mb-4">
-                <img src="/assets/assistante.png" alt="Julie, assistante" class="img-fluid rounded-circle mb-2" style="width: 150px;">
+                <img src="/accueil/assets/assistante.png" alt="Julie, assistante" class="img-fluid rounded-circle mb-2" style="width: 150px;">
                 <h5>Julie Martin</h5>
                 <p>Assistante dentaire</p>
             </div>
 
             <div class="col-md-4 mb-4">
-                <img src="/assets/secretaire.png" alt="Camille, secrétaire" class="img-fluid rounded-circle mb-2" style="width: 150px;">
+                <img src="/accueil/assets/secretaire.png" alt="Camille, secrétaire" class="img-fluid rounded-circle mb-2" style="width: 150px;">
                 <h5>Camille Lefèvre</h5>
                 <p>Secrétaire médicale</p>
             </div>
 
             <div class="col-md-4 mb-4">
-                <img src="/assets/hygieniste.png" alt="Thomas, hygiéniste" class="img-fluid rounded-circle mb-2" style="width: 150px;">
+                <img src="/accueil/assets/hygieniste.png" alt="Thomas, hygiéniste" class="img-fluid rounded-circle mb-2" style="width: 150px;">
                 <h5>Thomas Girard</h5>
                 <p>Hygiéniste dentaire</p>
             </div>

@@ -68,7 +68,7 @@ document.querySelectorAll(".delete-btn").forEach((button) => {
     });
     deleteBtn.addEventListener("click", () => {
       alert("Suppression confirmée !");
-      window.location.href = `/admin/delete/${articleId}`;
+      window.location.href = `/accueil/admin/delete/${articleId}`;
     });
 
     buttonDiv.append(cancelBtn, deleteBtn);

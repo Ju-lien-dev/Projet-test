@@ -6,13 +6,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>actualites</title>
-    <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" href="/accueil/style/index.css">
 </head>
 
 
 <?php include_once __DIR__ . '/../View/partials/header.php'; ?>
-<link rel="stylesheet" href="../style/header.css">
-<link rel="stylesheet" href="../style/style.css">
+<link rel="stylesheet" href="/accueil/style/header.css">
+<link rel="stylesheet" href="/accueil/style/style.css">
 <link href="https://fonts.googleapis.com/css?family=Rokkitt" rel="stylesheet">
 <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
@@ -35,7 +35,7 @@
                 <div class="appointment-card">
                     <!-- Image -->
                     <div class="mb-3 text-center">
-                        <img src="<?= !empty($article['image']) ? "/uploads/" . htmlspecialchars($article['image']) : "/assets/dentist.jpg" ?>"
+                        <img src="<?= !empty($article['image']) ? "/accueil/uploads/" . htmlspecialchars($article['image']) : "/accueil/assets/dentist.jpg" ?>"
                             alt="<?= htmlspecialchars($article['title']) ?>"
                             class="img-fluid rounded"
                             style="max-height: 200px; object-fit: cover; width: 100%;">

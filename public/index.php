@@ -18,6 +18,9 @@ while (!empty($scriptName) && !empty($requestUri) && $scriptName[0] === $request
 
 $uriSegments = $requestUri;
 
+if (count($uriSegments) === 0) {
+   $uriSegments[] = '';
+}
 
 
 $controller = new HomeController();

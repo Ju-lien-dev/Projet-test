@@ -65,7 +65,7 @@ class AdminController
             $content = $_POST['content'];
             $image = $this->uploadImage();
             $this->article->create($title, $content, $image);
-            header('Location: /admin/actualites');
+            header('Location: /accueil/admin/actualites');
         } else {
             include_once __DIR__ . '/../View/admin/createActu.php';
         }
@@ -78,7 +78,7 @@ class AdminController
             $title = $_POST['title'];
             $content = $_POST['content'];
             $this->article->update($id, $title, $content);
-            header('Location: /admin/actualites');
+            header('Location: /accueil/admin/actualites');
         } else {
 
             $article = $this->article->getById($id);
@@ -96,14 +96,14 @@ class AdminController
     {
         self::requireAdmin();
         $this->article->delete($id);
-        header('Location: /admin/actualites');
+        header('Location: /accueil/admin/actualites');
         exit;
     }
 
     private function uploadImage()
     {
         if (isset($_FILES['image']) && $_FILES['image']['error'] === UPLOAD_ERR_OK) {
-            $uploadDir = '../public/uploads/';
+            $uploadDir =  __DIR__ . '/../../public/uploads/';
             $fileName = basename($_FILES['image']['name']);
             $uploadFile = $uploadDir . $fileName;
             if (move_uploaded_file($_FILES['image']['tmp_name'], $uploadFile)) {
@@ -120,7 +120,7 @@ class AdminController
         }
 
         if (!isset($_SESSION['user']) || $_SESSION['user']['is_admin'] !== 1) {
-            header('Location: /login');
+            header('Location: /accueil/login');
             exit;
         }
     }
@@ -129,7 +129,7 @@ class AdminController
     {
         self::requireAdmin();
         $this->appointment->delete($token);
-        header('Location: /admin/rdv');
+        header('Location: /accueil/admin/rdv');
         exit;
     }
 

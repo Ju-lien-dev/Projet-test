@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Connexion</title>
 
-    <link rel="stylesheet" href="/style/newMemberForm.css">
+    <link rel="stylesheet" href="/accueil/style/newMemberForm.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
@@ -27,7 +27,7 @@
             </div>
             <div class="card-body">
 
-                <form method="post" action="/login">
+                <form method="post" action="/accueil/login">
                     <div class="form-group">
                         <label for="email">Adresse email</label>
                         <div class="input-group">
@@ -98,7 +98,7 @@
                     </div>
                 <?php endif; ?>
 
-                <form method="post" action="/register">
+                <form method="post" action="/accueil/register">
 
                     <div class="form-group">
                         <label>Nom</label>

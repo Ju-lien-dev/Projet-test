@@ -6,7 +6,7 @@ if (isset($_SESSION['user']) && $_SESSION['user']['is_admin'] == 0) {
     include_once __DIR__ . '/../View/partials/header.php';
 }
 ?>
-<link rel="stylesheet" href="/style/merci.css">
+<link rel="stylesheet" href="/accueil/style/merci.css">
 
 
 <?php

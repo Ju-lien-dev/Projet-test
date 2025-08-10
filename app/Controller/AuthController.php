@@ -66,7 +66,7 @@ class AuthController
             }
             if (empty($errors)) {
                 $this->user->create($nom, $prenom, $email, $password);
-                header('Location: /mon-compte');
+                header('Location: /accueil/mon-compte');
                 exit;
             }
         }
@@ -89,11 +89,11 @@ class AuthController
             if ($user) {
                 if ($user['is_admin'] != 1) {
                     $_SESSION['user'] = $user;
-                    header('Location: /mon-rdv');
+                    header('Location: /accueil/mon-rdv');
                     exit;
                 } else {
                     $_SESSION['user'] = $user;
-                    header('Location: /admin/rdv');
+                    header('Location: /accueil/admin/rdv');
                     exit;
                 }
             } else {
@@ -108,6 +108,6 @@ class AuthController
     {
         session_start();
         session_destroy();
-        header('Location: /login');
+        header('Location: /accueil/login');
     }
 }
